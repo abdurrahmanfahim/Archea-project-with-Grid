@@ -1,0 +1,706 @@
+/*========= Common css Start ========= */
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background: #121316;
+    color: #ffffff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.wrap {
+    display: grid;
+}
+
+.item {
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+    top: 0;
+    left: 0;
+}
+
+/* ========= Common css End */
+
+/* ========= Header Start ========= */
+
+header .wrap {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(85, 85, 87, 0.6);
+    padding: 55px 0 28px;
+}
+
+header .wrap .subs p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.48px;
+}
+
+header .wrap .subs {
+    position: relative;
+    padding-right: 18px;
+}
+header .wrap .subs i {
+    position: absolute;
+    top: 4px;
+    right: -11px;
+}
+
+header p a {
+    color: #fff;
+}
+
+#banner .container  h1 {
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -5.5px;
+    max-width: 834px;
+    margin: 132px 0 68px 0;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 141.55%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#banner .container .box {
+    width: 100%;
+    height: 444px;
+    background: #AEA9B0;
+    position: relative;
+    margin-bottom: 189px;
+}
+
+#banner .container .box .floated {
+    width: 142px;
+    height: 142px;
+    background: linear-gradient(180deg, #DF5 0%, #C1F80B 100%);
+    border: 6px solid #121316;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #121316;
+    font-size: 30px;
+    position: absolute;
+    right: 39px;
+    top: -68px;
+    transition: 0.7s;
+}
+
+#banner .container .box .floated i {
+    color: #000;
+    transition: .4s;
+}
+
+#banner .container .box .floated::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #121316;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0%;
+    z-index: -1;
+}
+
+#banner .container .box .floated:hover::after {
+    opacity: 40%;
+}
+
+#banner .container .box .floated:hover{
+    color: #FFF;
+    z-index: 999;
+
+}
+
+#banner .container .box .floated:hover i {
+    scale: 1.1;
+    color: #fff;
+}
+
+/* ========= Header End ========= */
+
+/* ========= Mixed Start ========= */
+
+#mixed .container {
+    padding: 88px 0 161px;
+}
+
+#mixed .container h2 {
+    max-width: 1082px;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+#mixed .container .wrap {
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 320px;
+    justify-content: end;
+    column-gap: 56px;
+    margin-bottom: 161px;
+}
+
+#mixed .container .wrap .box {
+    border-top: 2px solid #555557;
+    padding-top: 32px; 
+}
+
+#mixed .container .wrap .box h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin-bottom: 16px;
+}
+
+#mixed .container .wrap .box p {
+    color: #A3A3A5;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.05px;
+    margin-bottom: 56px;
+    max-width: 384px;
+}
+
+#mixed .container .wrap .box a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+    transition: 0.4s;
+}
+#mixed .container .wrap .box i {
+    margin-right: 12px;
+}
+
+#mixed .container .wrap .box a:hover {
+    text-decoration: underline;
+}
+
+/* ========= Mixed End ========= */
+
+/* ========= Projects Start ========= */
+
+#projects .container {
+    padding: 100px 0 160px
+}
+
+#projects .container h2 {
+    max-width: 670px;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.8px;
+    margin-bottom: 48px;
+}
+
+#projects .container h2 span {
+    color: #FFF;
+}
+
+#projects .container .project_list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 49px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px rgba(113, 113, 115, 0.70) solid;
+}
+
+#projects .container .project_list .years ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#projects .container .project_list .years ul li a{
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid #555557;
+    opacity: 0.6;
+    background: rgba(255, 255, 255, 0.05);
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    transition: 0.4s;
+}
+
+#projects .container .project_list .years ul li .a {
+    opacity: 1;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#projects .container .project_list .years ul li a:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#projects .container .project_list .see_all a{
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid #555557;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    transition: 0.4s;
+}
+
+#projects .container .project_list .see_all a:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* ==== masonry_pro Start ==== */
+
+#projects .grid_container {
+    margin-top: 78px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 58px);
+    /* grid-auto-rows: 88.2px; */
+    gap: 24px;
+    height: 882px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    grid-auto-flow: row;
+}
+
+#projects .grid_container .one {
+    background: #5E666F;
+    grid-row: 1 / 12;
+}
+#projects .grid_container .two {
+    background: #595C5D;
+    grid-row: 1 / 6;
+}
+#projects .grid_container .three {
+    background: #B1B8C2;
+    grid-row: 1 / 7;
+}
+#projects .grid_container .four {
+    background: #B1B8C2;
+    grid-row: 7 / -1;
+    /* grid-row-end: 7 / 11; */
+}
+#projects .grid_container .five {
+    background: #595C5D;
+    grid-row: 8 / -1;
+    /* grid-row-end: 8 / 11; */
+}
+/* ==== masonry_pro End ==== */
+/* ========= Projects End ========= */
+
+
+/* ========= Awards Start ========= */
+
+#awards .container {
+    padding: 96px 0 136px;
+}
+
+#awards .container h2 {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -2.4px;
+    width: 703px;
+    margin: 0 auto;
+}
+
+#awards .container p {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1px;
+    width: 482px;
+    margin: 12px auto 56px auto;
+    opacity: 0.6;
+}
+
+#awards .container .awards-year {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 49px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px rgba(113, 113, 115, 0.70) solid;
+}
+
+#awards .container .awards-year ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#awards .container .awards-year ul li a{
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid #555557;
+    opacity: 0.6;
+    background: rgba(255, 255, 255, 0.05);
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    transition: 0.4s;
+}
+
+#awards .container .awards-year ul li .a {
+    opacity: 1;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#awards .container .awards-year ul li a:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#awards .container .see_all a{
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid #555557;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    transition: 0.4s;
+}
+
+#awards .container .see_all a:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#awards .container .sp::before {
+    content: "";
+    display: inline-block;
+    width: 20%;
+    height: 4px;
+    opacity: 0.6;
+    background: #FFF;
+    margin-top: 14px;
+}
+
+#awards .container .sp::after {
+    content: "";
+    display: inline-block;
+    width: 80%;
+    height: 4px;
+    opacity: 0.1;
+    background: #D9D9D9;
+    margin-top: 14px;
+}
+
+/* ==== Awards_masonry Start ==== */
+
+#awards .container .wrap {
+    max-width: 1240px;
+    max-height: 816px;
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    grid-template-rows: repeat(12, 46px);
+    gap: 24px;
+    grid-auto-flow: row;
+    margin-top: 36px;
+}
+
+.item1 {
+    background: linear-gradient(180deg, #3C3F49 0%, rgba(60, 63, 73, 0.00) 100%);
+    grid-row-end: span 5;
+    grid-column-end: span 11;
+    position: relative;
+}
+.item2 {
+    background: #5E666F;
+    grid-row-end: span 7;
+    grid-column-end: span 20;
+}
+.item3 {
+    background: #485518;
+    grid-row-end: span 7;
+    grid-column-end: span 11;
+}
+.item4 {
+    background: linear-gradient(0deg, #2C340C 0%, #2C340C 100%), rgba(0, 0, 0, 0.40);
+    grid-row-end: span 5;
+    grid-column-end: span 10;
+}
+.item5 {
+    background: #282F0E;
+    grid-row-end: span 5;
+    grid-column-end: span 10;
+}
+
+/* ==== Awards_masonry End ==== */
+
+#awards .container .wrap .item1 .text-box {
+    padding: 24px;
+}
+
+.shad {
+    width: 358px;
+    height: 358px;
+    background: url("../images/shad.png") no-repeat;
+    position: absolute;
+    top: 175px;
+    left: 245px;
+}
+
+#awards .container .wrap .item1 span {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.4px;
+}
+
+#awards .container .wrap .item1 h3 {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -2.24px;
+}
+
+#awards .container .wrap .item1 ul {
+    display: flex;
+    column-gap: 16px;
+}
+
+#awards .container .wrap .item1 ul li {
+    color: #B1B2B6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.8px;
+}
+
+#awards .container .wrap .item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item .btn {
+    padding: 12px 24px;
+    gap: 10px;
+    border-radius: 50px;
+    background: #FFF;
+    border: 0;
+    color: #121316;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+#awards .container .wrap .item5 .t-box {
+    padding: 24px;
+}
+#awards .container .wrap .item5 .t-box h4 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -1.28px;
+}
+
+#awards .container .wrap .item5 .t-box ul {
+    display: flex;
+    column-gap: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+    padding: 12px 0 16px;
+    border-bottom: 1px solid rgba(181, 186, 163, 0.40);
+    margin-bottom: 19px;
+}
+
+#awards .container .wrap .item5 .t-box ul .active {
+    text-decoration-line: underline;
+    opacity: 1;
+} 
+
+#awards .container .wrap .item5 .t-box ul .de-active {
+    opacity: 0.6;
+} 
+
+#awards .container .wrap .item5 .t-box p a {
+    color: #fff;
+}
+#awards .container .wrap .item5 .t-box p a:hover {
+    text-decoration: underline;
+}
+
+#awards .container .wrap .item5 .t-box p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+    letter-spacing: -0.64px;
+    text-align: start;
+    width: 337px;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========= Awards End ========= */
+
+/* ========= Footer Start ========= */
+
+#footer .container {
+    padding: 100px 0 244px;
+}
+
+#footer .container p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.2px;
+}
+
+#footer .container .contact a {
+    color: #40444F;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -2.16px;
+}
+
+#footer .container .contact {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+#footer .container .contact::after {
+    content: "";
+    background: #40444F;
+    display: block;
+    width: 662px;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+#footer .container .contact a i {
+    width: 56px;
+    height: 56px;
+    background: #40444F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    font-size: 24px;
+    color: #fff;
+}
+
+#footer .container .contact i:hover {
+    color: #fff;
+    background: #2a2c2c;
+}
+
+#footer .container ul {
+    display: flex;
+    column-gap: 24px;
+    justify-content: start;
+    padding-top: 34px;
+}
+
+#footer .container ul li i {
+    width: 56px;
+    height: 56px;
+    background: rgba(64, 68, 79, 0.20);
+    border: 1px rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+#footer .container ul li i:hover {
+    color: #a2a4a8;
+    background: #595C5D;
+    scale: 1.1;
+}
+
+
+/* ========= Footer End ========= */
